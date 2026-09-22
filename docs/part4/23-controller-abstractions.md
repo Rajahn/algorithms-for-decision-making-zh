@@ -99,7 +99,31 @@ end
 
 ---
 
-## 23.3 控制器优化与梯度上升
+---
+
+## 23.3 非线性规划优化控制器 (Nonlinear Programming for Controllers)
+
+除了局部爬山搜索，阿马托等人（Christopher Amato et al., 2010）证明：寻找给定规模的有限状态控制器的最优参数，可以被严密等价形式化为一个**非线性规划（Nonlinear Programming, NLP）**问题。
+
+### 优化变量体系：
+- 价值变量 $U(x, s)$：在内部记忆状态 $x$ 与物理状态 $s$ 下的复合价值；
+- 策略变量 $\psi(a \mid x)$：内部节点到动作的输出概率；
+- 转移变量 $\eta(x' \mid x, a, o)$：观测驱动的节点跳转概率。
+
+### NLP 数学规划命题：
+$$
+\begin{aligned}
+\max_{\mathbf{U}, \boldsymbol{\psi}, \boldsymbol{\eta}} \quad & \sum_{s \in \mathcal{S}} b_0(s) U(x_0, s) \\
+\text{s.t.} \quad & U(x, s) \le \sum_{a \in \mathcal{A}} \psi(a \mid x) \left[ R(s, a) + \gamma \sum_{s'} T(s' \mid s, a) \sum_{o \in \mathcal{O}} O(o \mid a, s') \sum_{x'} \eta(x' \mid x, a, o) U(x', s') \right] \\
+& \sum_{a \in \mathcal{A}} \psi(a \mid x) = 1, \quad \psi(a \mid x) \ge 0 \quad (\forall x, a) \\
+& \sum_{x' \in \mathcal{X}} \eta(x' \mid x, a, o) = 1, \quad \eta(x' \mid x, a, o) \ge 0 \quad (\forall x, a, o)
+\end{aligned}
+$$
+约束条件中包含了策略变量 $\psi$ 与转移变量 $\eta$ 以及价值变量 $U$ 之间的**三次连续乘积非线性项**。利用通用的非线性规划求解器（如 IPOPT 内点法或 SNOPT 顺序二次规划 SQP），算法能够直接在连续概率参数空间中进行全局或高质量局部收敛求解。
+
+---
+
+## 23.4 控制器参数优化与梯度上升
 
 为了寻找最优的控制器参数（即动作输出概率 $\psi$ 与节点转移概率 $\eta$），通常采用以下方法：
 1. **梯度上升法（Gradient Ascent on Controllers）**：将动作策略与转移概率参数化为 Softmax 可微形式，利用第 11 章的似然对数导数技巧推导复合马尔可夫链关于控制器参数的解析梯度，沿梯度上升优化；
@@ -107,7 +131,7 @@ end
 
 ---
 
-## 23.4 本章小结 (Summary)
+## 23.5 本章小结 (Summary)
 
 - **终极紧凑的工程抽象**：有限状态控制器将历史时序记忆编译为离散有限状态机，消除了在线概率滤波的巨量开销；
 - **交叉积马尔可夫链**：环境物理状态与控制器记忆节点的复合在代数上严格构成一个闭环标准马尔可夫链，使得全局策略评估具有精确线性的矩阵解析解；
@@ -115,7 +139,7 @@ end
 
 ---
 
-## 23.5 课后习题与官方详细解答 (Exercises & Solutions)
+## 23.6 课后习题与官方详细解答 (Exercises & Solutions)
 
 ### 习题 23.1 (Exercise 23.1)
 **题目**：考虑一个环境包含 2 个物理状态 $\mathcal{S} = \{s_1, s_2\}$，控制器包含 2 个内部记忆节点 $\mathcal{X} = \{x_1, x_2\}$。求其闭环交叉乘积马尔可夫链的全局状态转移矩阵 $\mathbf{P}$ 的维度大小。
