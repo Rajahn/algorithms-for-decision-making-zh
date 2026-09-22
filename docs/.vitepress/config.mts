@@ -30,7 +30,7 @@ export default defineConfig({
       },
       {
         text: '第一部分：概率推理 (全卷完结)',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '第 2 章：表示 (Representation)', link: '/part1/02-representation' },
           { text: '第 3 章：推断 (Inference)', link: '/part1/03-inference' },
@@ -40,27 +40,27 @@ export default defineConfig({
         ]
       },
       {
-        text: '第二部分：序贯问题 (Sequential Problems)',
+        text: '第二部分：序贯问题 (全卷完结)',
         collapsed: false,
         items: [
           { text: '第 7 章：精确解法 (Exact Solutions)', link: '/part2/07-exact-solutions' },
           { text: '第 8 章：近似价值函数 (Approximate Values)', link: '/part2/08-approximate-value-functions' },
           { text: '第 9 章：在线规划 (Online Planning)', link: '/part2/09-online-planning' },
-          { text: '第 10 章：策略搜索 · 即将发布', link: '/toc' },
-          { text: '第 11 章：策略梯度估计 · 即将发布', link: '/toc' },
-          { text: '第 12 章：策略梯度优化 · 即将发布', link: '/toc' },
-          { text: '第 13 章：演员-评论员方法 · 即将发布', link: '/toc' },
-          { text: '第 14 章：策略验证 · 即将发布', link: '/toc' }
+          { text: '第 10 章：策略搜索 (Policy Search)', link: '/part2/10-policy-search' },
+          { text: '第 11 章：策略梯度估计 (Policy Gradient)', link: '/part2/11-policy-gradient-estimation' },
+          { text: '第 12 章：策略梯度优化 (TRPO & PPO)', link: '/part2/12-policy-gradient-optimization' },
+          { text: '第 13 章：演员-评论员方法 (Actor-Critic)', link: '/part2/13-actor-critic-methods' },
+          { text: '第 14 章：策略验证 (Policy Validation)', link: '/part2/14-policy-validation' }
         ]
       },
       {
         text: '第三部分：模型不确定性 (Model Uncertainty)',
         collapsed: true,
         items: [
-          { text: '第 15 章：探索与利用 · 待发布', link: '/toc' },
-          { text: '第 16 章：基于模型的方法 · 待发布', link: '/toc' },
-          { text: '第 17 章：无模型方法 · 待发布', link: '/toc' },
-          { text: '第 18 章：模仿学习 · 待发布', link: '/toc' }
+          { text: '第 15 章：探索与利用 · 即将上线', link: '/toc' },
+          { text: '第 16 章：基于模型的方法 · 即将上线', link: '/toc' },
+          { text: '第 17 章：无模型方法 · 即将上线', link: '/toc' },
+          { text: '第 18 章：模仿学习 · 即将上线', link: '/toc' }
         ]
       },
       {
