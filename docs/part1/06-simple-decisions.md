@@ -118,15 +118,9 @@ $$
 2. **决策节点（Decision Nodes，矩形）**：代表受智能体直接控制的可选行动变量，其入边代表**做出该决策时智能体已知的信息线索**；
 3. **效用节点（Utility Nodes，菱形）**：代表智能体获得的数值回报，其父节点为其效用评估所直接依赖的环境状态或行动。
 
-<div style="display: flex; justify-content: center; gap: 24px; margin: 20px 0; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <img src="/figures/fig_6_dn1.png" alt="基础决策网络" style="max-width: 250px; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
-    <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 6.3：示例 6.4 的雨伞决策网络。气象预报作为行动的信息输入。</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="/figures/fig_6_dn2.png" alt="包含测试动作的高级决策网络" style="max-width: 270px; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
-    <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 6.4：示例 6.5 包含预先测试动作的决策网络架构。</p>
-  </div>
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/figures/fig_6_dn2.png" alt="疾病诊断与治疗决策网络" style="max-width: 320px; display: inline-block; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
+  <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 6.3：示例 6.4 中用于疾病诊断与治疗决策的决策网络（包含疾病随机节点 $D$、诊断测试结果 $O_1, O_2, O_3$、治疗决策节点 $T$ 与效用节点 $U$）。</p>
 </div>
 
 ```julia
@@ -180,10 +174,7 @@ end
 
 这由**信息价值（Value of Information, VOI）**（又称完全信息价值 VPI）统领。
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="/figures/fig_6_voi.png" alt="信息价值决策网络" style="max-width: 320px; display: inline-block; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
-  <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 6.5：用于计算传感器观测节点信息价值的决策网络结构扩展。</p>
-</div>
+
 
 ### 6.6.1 数学定义
 设在没有额外观测时，智能体基于当前先验采取最优行动的基准期望效用为：
@@ -323,7 +314,14 @@ $$
 ---
 
 ### 习题 6.6 (Exercise 6.6)
-**题目**：设小狗处于饥饿状态 $H \in \{0, 1\}$，先验 $P(H=1) = 0.5$。行动 $F \in \{0, 1\}$ 代表是否喂食。小狗可能会摇尾巴 $W \in \{0, 1\}$，已知 $P(W=1 \mid H=0) = 0.8$，$P(W=1 \mid H=1) = 0.2$。效用矩阵为：若小狗饥饿且喂食 $U(H=1, F=1) = 10$，饥饿但未喂食 $U(H=1, F=0) = -20$，饱食且喂食 $U(H=0, F=1) = -5$，饱食且未喂食 $U(H=0, F=0) = 5$。若观察到小狗摇尾巴（$W=1$），求最优喂食决策。
+**题目**：考虑如下喂养小狗的决策网络拓扑图：
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/figures/fig_6_ex6.png" alt="小狗喂养决策网络" style="max-width: 320px; display: inline-block; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
+  <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 6.4：习题 6.6 的小狗喂养决策网络结构（包含饥饿随机变量 $H$、摇尾巴 $W$、跑向食盆 $R$、喂食决策 $F$ 与效用 $U$）。</p>
+</div>
+
+设小狗处于饥饿状态 $H \in \{0, 1\}$，先验 $P(H=1) = 0.5$。行动 $F \in \{0, 1\}$ 代表是否喂食。小狗可能会摇尾巴 $W \in \{0, 1\}$，已知 $P(W=1 \mid H=0) = 0.8$，$P(W=1 \mid H=1) = 0.2$。效用矩阵为：若小狗饥饿且喂食 $U(H=1, F=1) = 10$，饥饿但未喂食 $U(H=1, F=0) = -20$，饱食且喂食 $U(H=0, F=1) = -5$，饱食且未喂食 $U(H=0, F=0) = 5$。若观察到小狗摇尾巴（$W=1$），求最优喂食决策。
 
 **详细解答**：
 1. 首先利用贝叶斯法则计算小狗在摇尾巴条件下的饥饿后验概率：

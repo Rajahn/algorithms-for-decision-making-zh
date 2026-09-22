@@ -181,7 +181,7 @@ $$
 
 <div style="text-align: center; margin: 20px 0;">
   <img src="/figures/fig_5_4.png" alt="道德与非道德 v-结构对比" style="max-width: 320px; display: inline-block; border-radius: 4px; box-shadow: 0 1px 6px rgba(0,0,0,0.08);" />
-  <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 5.4：非道德 v-结构（左，父节点间无连边）与道德 v-结构（右，父节点间存在连边）。</p>
+  <p style="color: #666; font-size: 0.9em; margin-top: 6px;">图 5.4：道德 v-结构（左，父节点间存在直接连边）与非道德 v-结构（右，父节点间无直接连边）。</p>
 </div>
 
 ### 5.3.2 部分有向无环图 (PDAG)
