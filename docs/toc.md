@@ -188,21 +188,40 @@
 
 ---
 
-## 第五部分：多智能体系统 (Multiagent Systems) `[即将上线]`
+## 第五部分：多智能体系统 (Multiagent Systems) · 全卷完结
 
-- 第 24 章：多智能体推理 (Multiagent Reasoning)
-- 第 25 章：序贯博弈 (Sequential Problems)
-- 第 26 章：状态不确定性 (State Uncertainty)
-- 第 27 章：协同智能体 (Collaborative Agents)
+- **第 24 章：多智能体推理 (Multiagent Reasoning)** [[已上线]](/part5/24-multiagent-reasoning)
+  - 24.1 策略型博弈形式化（参与者集合、联合动作剖面、纯策略与混合策略）
+  - 24.2 纳什均衡（最优反应对齐、纳什存在性定理、两人零和博弈与极小极大定理）
+  - 24.3 迭代剔除严格劣势策略（IESDS 与囚徒困境单调收敛）
+  - 24.4 反应模型与认知层级（Level-$k$ 思考、分层 Softmax 模型、旅行者困境）
+  - 24.5 虚拟博弈与动态演化（经验频率对手模型、石头剪刀布轨道螺旋循环、猜硬币梯度上升极限环）
+  - 24.6 本章小结与 4 道课后习题全解
+- **第 25 章：多智能体序贯博弈 (Sequential Problems)** [[已上线]](/part5/25-sequential-problems)
+  - 25.1 扩展式博弈与博弈树（决策节点、机会节点、信息集与不完全信息隔离）
+  - 25.2 逆向归纳法与子博弈精炼纳什均衡（SPE，剔除不可置信的空头威胁）
+  - 25.3 随机博弈（马尔可夫博弈 Markov Games，局域纳什均衡贝尔曼最优性方程）
+  - 25.4 纳什 Q-Learning 与 Minimax-Q 多智能体无模型强化学习
+  - 25.5 本章小结与 2 道课后习题全解
+- **第 26 章：状态不确定性博弈 (State Uncertainty)** [[已上线]](/part5/26-state-uncertainty)
+  - 26.1 部分可观测随机博弈 (POSG) 形式化与独立私有传感器通道
+  - 26.2 交互式置信状态（I-POMDP，破译“我认为你认为……”无限递归心智层级）
+  - 26.3 多智能体条件计划与 Alpha 向量超平面鞍点曲面
+  - 26.4 本章小结与 2 道课后习题全解
+- **第 27 章：协同智能体 (Collaborative Agents)** [[已上线]](/part5/27-collaborative-agents)
+  - 27.1 分布式 POMDP (Dec-POMDP，团队共同奖励函数、通信受限、NEXP-Complete 复杂度分析)
+  - 27.2 网络化分布式模型与协同图（ND-POMDP，空间超图局部因子分解）
+  - 27.3 全书决策模型全局大一统终极谱系（图 27.2 终极谱系树：从简单决策到 Dec-POMDP 的全景亲缘拓扑）
+  - 27.4 本章小结与 3 道课后习题全解
 
 ---
 
-## 附录 (Appendices) `[待发布]`
+## 附录 (Appendices) `[即将上线]`
 
-- 附录 A：数学概念
-- 附录 B：概率分布速查
-- 附录 C：计算复杂度
-- 附录 D：神经网络表示
-- 附录 E：搜索算法
-- 附录 F：基准问题库
-- 附录 G：Julia 语言速查
+- 附录 A：数学概念 (Mathematical Concepts)
+- 附录 B：常用概率分布速查 (Probability Distributions)
+- 附录 C：计算复杂度 (Computational Complexity)
+- 附录 D：神经网络表示 (Neural Representations)
+- 附录 E：基础搜索算法 (Search Algorithms)
+- 附录 F：全书基准决策问题库 (Benchmark Problems)
+- 附录 G：Julia 科学计算语言速查 (Julia)

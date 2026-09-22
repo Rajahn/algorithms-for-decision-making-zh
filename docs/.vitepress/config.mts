@@ -19,6 +19,7 @@ export default defineConfig({
       { text: '第二部分：序贯问题', link: '/part2/07-exact-solutions' },
       { text: '第三部分：模型不确定性', link: '/part3/15-exploration-and-exploitation' },
       { text: '第四部分：状态不确定性', link: '/part4/19-beliefs' },
+      { text: '第五部分：多智能体系统', link: '/part5/24-multiagent-reasoning' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -67,7 +68,7 @@ export default defineConfig({
       },
       {
         text: '第四部分：状态不确定性 (全卷完结)',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '第 19 章：置信状态 (Beliefs & POMDP)', link: '/part4/19-beliefs' },
           { text: '第 20 章：精确置信规划 (Exact Planning)', link: '/part4/20-exact-belief-state-planning' },
@@ -77,26 +78,26 @@ export default defineConfig({
         ]
       },
       {
-        text: '第五部分：多智能体系统 (Multiagent Systems)',
-        collapsed: true,
+        text: '第五部分：多智能体系统 (全卷完结)',
+        collapsed: false,
         items: [
-          { text: '第 24 章：多智能体推理 · 即将上线', link: '/toc' },
-          { text: '第 25 章：序贯博弈 · 即将上线', link: '/toc' },
-          { text: '第 26 章：状态不确定性 · 即将上线', link: '/toc' },
-          { text: '第 27 章：协同智能体 · 即将上线', link: '/toc' }
+          { text: '第 24 章：多智能体推理 (Multiagent Reasoning)', link: '/part5/24-multiagent-reasoning' },
+          { text: '第 25 章：序贯博弈 (Sequential Problems)', link: '/part5/25-sequential-problems' },
+          { text: '第 26 章：状态不确定性 (POSG)', link: '/part5/26-state-uncertainty' },
+          { text: '第 27 章：协同智能体 (Dec-POMDP & 谱系)', link: '/part5/27-collaborative-agents' }
         ]
       },
       {
         text: '附录 (Appendices)',
         collapsed: true,
         items: [
-          { text: '附录 A：数学概念 · 待发布', link: '/toc' },
-          { text: '附录 B：概率分布 · 待发布', link: '/toc' },
-          { text: '附录 C：计算复杂度 · 待发布', link: '/toc' },
-          { text: '附录 D：神经网络表示 · 待发布', link: '/toc' },
-          { text: '附录 E：搜索算法 · 待发布', link: '/toc' },
-          { text: '附录 F：基准问题 · 待发布', link: '/toc' },
-          { text: '附录 G：Julia 语言速查 · 待发布', link: '/toc' }
+          { text: '附录 A：数学概念 · 即将上线', link: '/toc' },
+          { text: '附录 B：概率分布 · 即将上线', link: '/toc' },
+          { text: '附录 C：计算复杂度 · 即将上线', link: '/toc' },
+          { text: '附录 D：神经网络表示 · 即将上线', link: '/toc' },
+          { text: '附录 E：搜索算法 · 即将上线', link: '/toc' },
+          { text: '附录 F：基准问题 · 即将上线', link: '/toc' },
+          { text: '附录 G：Julia 语言速查 · 即将上线', link: '/toc' }
         ]
       }
     ],
