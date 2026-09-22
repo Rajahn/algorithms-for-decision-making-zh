@@ -153,17 +153,42 @@
 
 ---
 
-## 第四部分：状态不确定性 (State Uncertainty) `[即将上线]`
+## 第四部分：状态不确定性 (State Uncertainty) · 全卷完结
 
-- 第 19 章：置信状态 (Beliefs)
-- 第 20 章：精确置信状态规划 (Exact Belief State Planning)
-- 第 21 章：离线置信状态规划 (Offline Belief State Planning)
-- 第 22 章：在线置信状态规划 (Online Belief State Planning)
-- 第 23 章：控制器抽象 (Controller Abstractions)
+- **第 19 章：置信状态 (Beliefs)** [[已上线]](/part4/19-beliefs)
+  - 19.1 部分可观测马尔可夫决策过程 (POMDP) 七元组数学形式化
+  - 19.2 离散置信状态与贝叶斯滤波精确更新（概率单纯形几何、信息充分统计量）
+  - 19.3 连续状态与卡尔曼滤波（线性高斯系统、时序预测与测量更新增益闭式解）
+  - 19.4 扩展与无迹卡尔曼滤波（EKF 一阶雅可比切线线性化、UKF 确定性 Sigma 点非线性高阶矩保持）
+  - 19.5 粒子滤波（顺序重要性重采样 SMC、粒子退化与重采样机制）
+  - 19.6 本章小结与 5 道课后习题全解
+- **第 20 章：精确置信状态规划 (Exact Belief State Planning)** [[已上线]](/part4/20-exact-belief-state-planning)
+  - 20.1 条件计划树（树状策略表示、双重指数级组合增长爆炸）
+  - 20.2 Alpha 向量与分段线性凸函数（PWLC，Sondik 凸性定理与信息内在价值）
+  - 20.3 线性规划剪枝（LP 支配性判定与无损超平面修剪）
+  - 20.4 精确价值迭代（Monahan 算法跨步组合与极限瓶颈）
+  - 20.5 本章小结与 5 道课后习题全解
+- **第 21 章：离线置信状态规划 (Offline Belief State Planning)** [[已上线]](/part4/21-offline-belief-state-planning)
+  - 21.1 快速启发式基线（QMDP 假定未来完全可观测、快速知情界 FIB、盲目策略下界）
+  - 21.2 点基价值迭代（PBVI，有限可达置信点集 $B$ 局部切线备份，彻底打破向量爆炸）
+  - 21.3 锯齿形上界（Sawtooth Bound，顶点精确值与凸包包络）
+  - 21.4 SARSOP 算法（上下界双向夹逼、探索性可达置信树展开与不可达分支剪枝）
+  - 21.5 规则单纯形离散化（Freudenthal 弗洛伊登塔尔三角剖分）
+  - 21.6 本章小结与 4 道课后习题全解
+- **第 22 章：在线置信状态规划 (Online Belief State Planning)** [[已上线]](/part4/22-online-belief-state-planning)
+  - 22.1 在线信念树前瞻（动作-观测交替分支与局部计算投射）
+  - 22.2 POMCP 算法（Silver & Veness 2010，MCTS 与粒子滤波无缝结合、黑盒模拟器、零开销后验粒子继承、状态规模跨越至 $10^{20}$）
+  - 22.3 确定化前瞻与场景树搜索（稀疏场景采样）
+  - 22.4 本章小结与 4 道课后习题全解
+- **第 23 章：控制器抽象 (Controller Abstractions)** [[已上线]](/part4/23-controller-abstractions)
+  - 23.1 有限状态控制器（FSC，内部离散记忆节点、常数时间 $O(1)$ 极简执行）
+  - 23.2 控制器策略评估（环境与控制器闭环交叉乘积马尔可夫链、矩阵求逆精确解析解）
+  - 23.3 控制器参数优化（梯度上升与动态节点合并压缩）
+  - 23.4 本章小结与 3 道课后习题全解
 
 ---
 
-## 第五部分：多智能体系统 (Multiagent Systems) `[待发布]`
+## 第五部分：多智能体系统 (Multiagent Systems) `[即将上线]`
 
 - 第 24 章：多智能体推理 (Multiagent Reasoning)
 - 第 25 章：序贯博弈 (Sequential Problems)

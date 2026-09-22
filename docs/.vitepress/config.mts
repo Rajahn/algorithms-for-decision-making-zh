@@ -18,6 +18,7 @@ export default defineConfig({
       { text: '第一部分：概率推理', link: '/part1/02-representation' },
       { text: '第二部分：序贯问题', link: '/part2/07-exact-solutions' },
       { text: '第三部分：模型不确定性', link: '/part3/15-exploration-and-exploitation' },
+      { text: '第四部分：状态不确定性', link: '/part4/19-beliefs' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -56,7 +57,7 @@ export default defineConfig({
       },
       {
         text: '第三部分：模型不确定性 (全卷完结)',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '第 15 章：探索与利用 (Exploration & Exploitation)', link: '/part3/15-exploration-and-exploitation' },
           { text: '第 16 章：基于模型的方法 (Model-Based RL)', link: '/part3/16-model-based-methods' },
@@ -65,24 +66,24 @@ export default defineConfig({
         ]
       },
       {
-        text: '第四部分：状态不确定性 (State Uncertainty)',
-        collapsed: true,
+        text: '第四部分：状态不确定性 (全卷完结)',
+        collapsed: false,
         items: [
-          { text: '第 19 章：置信状态 · 即将发布', link: '/toc' },
-          { text: '第 20 章：精确置信状态规划 · 即将发布', link: '/toc' },
-          { text: '第 21 章：离线置信状态规划 · 即将发布', link: '/toc' },
-          { text: '第 22 章：在线置信状态规划 · 即将发布', link: '/toc' },
-          { text: '第 23 章：控制器抽象 · 即将发布', link: '/toc' }
+          { text: '第 19 章：置信状态 (Beliefs & POMDP)', link: '/part4/19-beliefs' },
+          { text: '第 20 章：精确置信规划 (Exact Planning)', link: '/part4/20-exact-belief-state-planning' },
+          { text: '第 21 章：离线置信规划 (PBVI & SARSOP)', link: '/part4/21-offline-belief-state-planning' },
+          { text: '第 22 章：在线置信规划 (POMCP)', link: '/part4/22-online-belief-state-planning' },
+          { text: '第 23 章：控制器抽象 (Controller Abstractions)', link: '/part4/23-controller-abstractions' }
         ]
       },
       {
         text: '第五部分：多智能体系统 (Multiagent Systems)',
         collapsed: true,
         items: [
-          { text: '第 24 章：多智能体推理 · 待发布', link: '/toc' },
-          { text: '第 25 章：序贯博弈 · 待发布', link: '/toc' },
-          { text: '第 26 章：状态不确定性 · 待发布', link: '/toc' },
-          { text: '第 27 章：协同智能体 · 待发布', link: '/toc' }
+          { text: '第 24 章：多智能体推理 · 即将上线', link: '/toc' },
+          { text: '第 25 章：序贯博弈 · 即将上线', link: '/toc' },
+          { text: '第 26 章：状态不确定性 · 即将上线', link: '/toc' },
+          { text: '第 27 章：协同智能体 · 即将上线', link: '/toc' }
         ]
       },
       {
