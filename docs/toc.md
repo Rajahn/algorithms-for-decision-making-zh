@@ -119,16 +119,41 @@
 
 ---
 
-## 第三部分：模型不确定性 (Model Uncertainty) `[即将上线]`
+## 第三部分：模型不确定性 (Model Uncertainty) · 全卷完结
 
-- 第 15 章：探索与利用 (Exploration and Exploitation)
-- 第 16 章：基于模型的方法 (Model-Based Methods)
-- 第 17 章：无模型方法 (Model-Free Methods)
-- 第 18 章：模仿学习 (Imitation Learning)
+- **第 15 章：探索与利用 (Exploration and Exploitation)** [[已上线]](/part3/15-exploration-and-exploitation)
+  - 15.1 多臂老虎机问题形式化与累积遗憾指标
+  - 15.2 $\epsilon$-贪心探索策略
+  - 15.3 上限置信区间算法（UCB1，霍夫丁不等式置信半径与对数遗憾界）
+  - 15.4 汤普森采样（后验概率匹配、Beta-Binomial 共轭更新）
+  - 15.5 基廷斯指数（Gittins Index，最优停时与一维解耦定理）
+  - 15.6 本章小结与 7 道课后习题全解
+- **第 16 章：基于模型的方法 (Model-Based Methods)** [[已上线]](/part3/16-model-based-methods)
+  - 16.1 极大似然模型估计（转移频数与即时奖励统计）
+  - 16.2 确定性等价控制与次优闭环死锁陷阱
+  - 16.3 R-MAX 算法（已知/未知状态二分、未知状态 $R_{\max}$ 乐观探索与 PAC-MDP 保证）
+  - 16.4 后验采样强化学习（PSRL，全局狄利克雷抽样与全幕深度相干探索）
+  - 16.5 贝叶斯自适应 MDP（BAMDP，超状态空间展开）
+  - 16.6 本章小结与 7 道课后习题全解
+- **第 17 章：无模型方法 (Model-Free Methods)** [[已上线]](/part3/17-model-free-methods)
+  - 17.1 增量估计与罗宾斯-门罗收敛条件
+  - 17.2 Q-Learning（离策略时序差分控制、贝尔曼最优更新与概率 1 收敛保证）
+  - 17.3 SARSA（在策略控制、悬崖行走风险规避对比）
+  - 17.4 资格迹与 $\text{SARSA}(\lambda)$（累积迹与替换迹、跨步自适应平滑）
+  - 17.5 线性函数逼近 Q-Learning（山地车控制任务）
+  - 17.6 本章小结与 7 道课后习题全解
+- **第 18 章：模仿学习 (Imitation Learning)** [[已上线]](/part3/18-imitation-learning)
+  - 18.1 行为克隆与协变量漂移（二次方复合误差 $O(T^2)$ 理论证明）
+  - 18.2 数据集聚合（DAgger 交互式在线干预与线性误差压缩）
+  - 18.3 逆向强化学习（IRL，意图解码与跨具身迁移）
+  - 18.4 最大边际逆向强化学习（特征期望匹配与支持向量最大间隔投影）
+  - 18.5 最大熵逆向强化学习（MaxEnt IRL，玻尔兹曼路径分布与多解歧义消除）
+  - 18.6 生成对抗模仿学习（GAIL，GAN 对抗对偶博弈与 JS 散度极小化）
+  - 18.7 本章小结与 8 道课后习题全解
 
 ---
 
-## 第四部分：状态不确定性 (State Uncertainty) `[待发布]`
+## 第四部分：状态不确定性 (State Uncertainty) `[即将上线]`
 
 - 第 19 章：置信状态 (Beliefs)
 - 第 20 章：精确置信状态规划 (Exact Belief State Planning)

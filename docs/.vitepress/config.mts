@@ -17,6 +17,7 @@ export default defineConfig({
       { text: '全书目录', link: '/toc' },
       { text: '第一部分：概率推理', link: '/part1/02-representation' },
       { text: '第二部分：序贯问题', link: '/part2/07-exact-solutions' },
+      { text: '第三部分：模型不确定性', link: '/part3/15-exploration-and-exploitation' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -41,7 +42,7 @@ export default defineConfig({
       },
       {
         text: '第二部分：序贯问题 (全卷完结)',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '第 7 章：精确解法 (Exact Solutions)', link: '/part2/07-exact-solutions' },
           { text: '第 8 章：近似价值函数 (Approximate Values)', link: '/part2/08-approximate-value-functions' },
@@ -54,24 +55,24 @@ export default defineConfig({
         ]
       },
       {
-        text: '第三部分：模型不确定性 (Model Uncertainty)',
-        collapsed: true,
+        text: '第三部分：模型不确定性 (全卷完结)',
+        collapsed: false,
         items: [
-          { text: '第 15 章：探索与利用 · 即将上线', link: '/toc' },
-          { text: '第 16 章：基于模型的方法 · 即将上线', link: '/toc' },
-          { text: '第 17 章：无模型方法 · 即将上线', link: '/toc' },
-          { text: '第 18 章：模仿学习 · 即将上线', link: '/toc' }
+          { text: '第 15 章：探索与利用 (Exploration & Exploitation)', link: '/part3/15-exploration-and-exploitation' },
+          { text: '第 16 章：基于模型的方法 (Model-Based RL)', link: '/part3/16-model-based-methods' },
+          { text: '第 17 章：无模型方法 (Model-Free RL)', link: '/part3/17-model-free-methods' },
+          { text: '第 18 章：模仿学习 (Imitation Learning)', link: '/part3/18-imitation-learning' }
         ]
       },
       {
         text: '第四部分：状态不确定性 (State Uncertainty)',
         collapsed: true,
         items: [
-          { text: '第 19 章：置信状态 · 待发布', link: '/toc' },
-          { text: '第 20 章：精确置信状态规划 · 待发布', link: '/toc' },
-          { text: '第 21 章：离线置信状态规划 · 待发布', link: '/toc' },
-          { text: '第 22 章：在线置信状态规划 · 待发布', link: '/toc' },
-          { text: '第 23 章：控制器抽象 · 待发布', link: '/toc' }
+          { text: '第 19 章：置信状态 · 即将发布', link: '/toc' },
+          { text: '第 20 章：精确置信状态规划 · 即将发布', link: '/toc' },
+          { text: '第 21 章：离线置信状态规划 · 即将发布', link: '/toc' },
+          { text: '第 22 章：在线置信状态规划 · 即将发布', link: '/toc' },
+          { text: '第 23 章：控制器抽象 · 即将发布', link: '/toc' }
         ]
       },
       {
