@@ -16,6 +16,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '全书目录', link: '/toc' },
       { text: '第一部分：概率推理', link: '/part1/02-representation' },
+      { text: '第二部分：序贯问题', link: '/part2/07-exact-solutions' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -40,16 +41,16 @@ export default defineConfig({
       },
       {
         text: '第二部分：序贯问题 (Sequential Problems)',
-        collapsed: true,
+        collapsed: false,
         items: [
-          { text: '第 7 章：精确解法 (Exact Solutions) · 待发布', link: '/toc' },
-          { text: '第 8 章：近似价值函数 · 待发布', link: '/toc' },
-          { text: '第 9 章：在线规划 · 待发布', link: '/toc' },
-          { text: '第 10 章：策略搜索 · 待发布', link: '/toc' },
-          { text: '第 11 章：策略梯度估计 · 待发布', link: '/toc' },
-          { text: '第 12 章：策略梯度优化 · 待发布', link: '/toc' },
-          { text: '第 13 章：演员-评论员方法 · 待发布', link: '/toc' },
-          { text: '第 14 章：策略验证 · 待发布', link: '/toc' }
+          { text: '第 7 章：精确解法 (Exact Solutions)', link: '/part2/07-exact-solutions' },
+          { text: '第 8 章：近似价值函数 (Approximate Values)', link: '/part2/08-approximate-value-functions' },
+          { text: '第 9 章：在线规划 (Online Planning)', link: '/part2/09-online-planning' },
+          { text: '第 10 章：策略搜索 · 即将发布', link: '/toc' },
+          { text: '第 11 章：策略梯度估计 · 即将发布', link: '/toc' },
+          { text: '第 12 章：策略梯度优化 · 即将发布', link: '/toc' },
+          { text: '第 13 章：演员-评论员方法 · 即将发布', link: '/toc' },
+          { text: '第 14 章：策略验证 · 即将发布', link: '/toc' }
         ]
       },
       {

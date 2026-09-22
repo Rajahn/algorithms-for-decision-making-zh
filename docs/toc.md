@@ -57,19 +57,37 @@
 
 ---
 
-## 第二部分：序贯问题 (Sequential Problems) `[即将上线]`
+## 第二部分：序贯问题 (Sequential Problems) · 前半篇上线
 
-- **第 7 章：精确解法 (Exact Solution Methods)**
-  - 马尔可夫决策过程 (MDP) 形式化定义（$S, A, T, R, \gamma$）
-  - 贝尔曼期望方程与贝尔曼最优性方程
-  - 策略评估、策略迭代（Policy Iteration）、价值迭代（Value Iteration）
-- **第 8 章：近似价值函数 (Approximate Value Functions)**
-- **第 9 章：在线规划 (Online Planning)**
-- **第 10 章：策略搜索 (Policy Search)**
-- **第 11 章：策略梯度估计 (Policy Gradient Estimation)**
-- **第 12 章：策略梯度优化 (Policy Gradient Optimization)**
-- **第 13 章：演员-评论员方法 (Actor-Critic Methods)**
-- **第 14 章：策略验证 (Policy Validation)**
+- **第 7 章：精确解法 (Exact Solution Methods)** [[已上线]](/part2/07-exact-solutions)
+  - 7.1 马尔可夫决策过程 (MDP) 形式化定义（$\mathcal{S}, \mathcal{A}, T, R, \gamma$）与平稳网络结构
+  - 7.2 策略评估（贝尔曼期望方程、矩阵逆解析解 $\mathbf{U}^\pi = (\mathbf{I} - \gamma \mathbf{T}^\pi)^{-1} \mathbf{R}^\pi$、迭代式策略评估）
+  - 7.3 动作价值函数与策略改进（$Q$ 函数、贪心策略单调提升定理）
+  - 7.4 策略迭代（交替评估与改进、有限步收敛保证）
+  - 7.5 价值迭代（贝尔曼最优性算子、$\gamma$-压缩映射与巴拿赫不动点定理、终止阈值）
+  - 7.6 异步价值迭代（Gauss-Seidel 原地更新、优先遍历 Prioritized Sweeping）
+  - 7.7 线性规划解法（对偶线性规划形式化）
+  - 7.8 本章小结与 9 道课后习题全解
+- **第 8 章：近似价值函数 (Approximate Value Functions)** [[已上线]](/part2/08-approximate-value-functions)
+  - 8.1 局部逼近（最近邻 Voronoi 剖分、高斯核加权平滑平均、局部逼近价值迭代、山地车控制任务）
+  - 8.2 多维网格插值（一维线性插值杠杆原理、高维超立方体多线性插值双曲抛物面）
+  - 8.3 单纯形网格插值（库恩三角剖分 Kuhn Triangulation，顶点数从 $2^d$ 骤降至 $d+1$）
+  - 8.4 参数化全局函数逼近（线性回归模型、多项式基、高斯 RBF 基、正交傅里叶基）
+  - 8.5 拟合价值迭代（Fitted Value Iteration，最小二乘正规方程解析投影求解）
+  - 8.6 本章小结与 8 道课后习题全解
+- **第 9 章：在线规划 (Online Planning)** [[已上线]](/part2/09-online-planning)
+  - 9.1 重新规划与滚动时域（Receding Horizon，局部前瞻抗扰机制）
+  - 9.2 前瞻搜索（深度受限树展开、叶节点启发式截断）
+  - 9.3 稀疏采样（有限蒙特卡洛分支度、样本复杂度与全状态空间解耦证明）
+  - 9.4 蒙特卡洛树搜索（MCTS：选择 UCB1 / UCT 探索利用平衡、扩展、随机推演 Rollout、反向传播，2048 棋局实战）
+  - 9.5 启发式搜索与实时动态规划（RTDP，可采纳上界贪心包络扩展）
+  - 9.6 模型预测控制（MPC 连续轨迹滚动优化）
+  - 9.7 本章小结与 8 道课后习题全解
+- **第 10 章：策略搜索 (Policy Search)** `[即将发布]`
+- **第 11 章：策略梯度估计 (Policy Gradient Estimation)** `[即将发布]`
+- **第 12 章：策略梯度优化 (Policy Gradient Optimization)** `[即将发布]`
+- **第 13 章：演员-评论员方法 (Actor-Critic Methods)** `[即将发布]`
+- **第 14 章：策略验证 (Policy Validation)** `[即将发布]`
 
 ---
 
