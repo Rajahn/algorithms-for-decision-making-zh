@@ -14,9 +14,8 @@ export default defineConfig({
     siteTitle: '决策算法 (ADM 中文版)',
     nav: [
       { text: '首页', link: '/' },
-      { text: '第 1 章：绪论', link: '/part1/01-introduction' },
-      { text: '第 2 章：表示', link: '/part1/02-representation' },
       { text: '全书目录', link: '/toc' },
+      { text: '第一部分：概率推理', link: '/part1/02-representation' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -24,19 +23,19 @@ export default defineConfig({
         text: '导读与前言',
         collapsed: false,
         items: [
-          { text: '全书目录', link: '/toc' },
+          { text: '全书总目录', link: '/toc' },
           { text: '第 1 章：绪论 (Introduction)', link: '/part1/01-introduction' }
         ]
       },
       {
-        text: '第一部分：概率推理 (Probabilistic Reasoning)',
+        text: '第一部分：概率推理 (全卷完结)',
         collapsed: false,
         items: [
           { text: '第 2 章：表示 (Representation)', link: '/part1/02-representation' },
-          { text: '第 3 章：推断 (Inference) · 待发布', link: '/toc' },
-          { text: '第 4 章：参数学习 (Parameter Learning) · 待发布', link: '/toc' },
-          { text: '第 5 章：结构学习 (Structure Learning) · 待发布', link: '/toc' },
-          { text: '第 6 章：简单决策 (Simple Decisions) · 待发布', link: '/toc' }
+          { text: '第 3 章：推断 (Inference)', link: '/part1/03-inference' },
+          { text: '第 4 章：参数学习 (Parameter Learning)', link: '/part1/04-parameter-learning' },
+          { text: '第 5 章：结构学习 (Structure Learning)', link: '/part1/05-structure-learning' },
+          { text: '第 6 章：简单决策 (Simple Decisions)', link: '/part1/06-simple-decisions' }
         ]
       },
       {
