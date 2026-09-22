@@ -14,12 +14,13 @@ export default defineConfig({
     siteTitle: '决策算法 (ADM 中文版)',
     nav: [
       { text: '首页', link: '/' },
-      { text: '全书目录', link: '/toc' },
+      { text: '全书总目录', link: '/toc' },
       { text: '第一部分：概率推理', link: '/part1/02-representation' },
       { text: '第二部分：序贯问题', link: '/part2/07-exact-solutions' },
       { text: '第三部分：模型不确定性', link: '/part3/15-exploration-and-exploitation' },
       { text: '第四部分：状态不确定性', link: '/part4/19-beliefs' },
       { text: '第五部分：多智能体系统', link: '/part5/24-multiagent-reasoning' },
+      { text: '附录', link: '/appendices/appendix-a' },
       { text: '原书主页', link: 'https://algorithmsbook.com/' }
     ],
     sidebar: [
@@ -79,7 +80,7 @@ export default defineConfig({
       },
       {
         text: '第五部分：多智能体系统 (全卷完结)',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '第 24 章：多智能体推理 (Multiagent Reasoning)', link: '/part5/24-multiagent-reasoning' },
           { text: '第 25 章：序贯博弈 (Sequential Problems)', link: '/part5/25-sequential-problems' },
@@ -88,16 +89,16 @@ export default defineConfig({
         ]
       },
       {
-        text: '附录 (Appendices)',
-        collapsed: true,
+        text: '全书附录 (全卷完结)',
+        collapsed: false,
         items: [
-          { text: '附录 A：数学概念 · 即将上线', link: '/toc' },
-          { text: '附录 B：概率分布 · 即将上线', link: '/toc' },
-          { text: '附录 C：计算复杂度 · 即将上线', link: '/toc' },
-          { text: '附录 D：神经网络表示 · 即将上线', link: '/toc' },
-          { text: '附录 E：搜索算法 · 即将上线', link: '/toc' },
-          { text: '附录 F：基准问题 · 即将上线', link: '/toc' },
-          { text: '附录 G：Julia 语言速查 · 即将上线', link: '/toc' }
+          { text: '附录 A：数学概念 (Math Concepts)', link: '/appendices/appendix-a' },
+          { text: '附录 B：常用概率分布速查 (Distributions)', link: '/appendices/appendix-b' },
+          { text: '附录 C：计算复杂度 (Complexity)', link: '/appendices/appendix-c' },
+          { text: '附录 D：神经网络表示 (Neural Reps)', link: '/appendices/appendix-d' },
+          { text: '附录 E：基础搜索算法 (Search Algorithms)', link: '/appendices/appendix-e' },
+          { text: '附录 F：全书基准决策问题库 (Problems)', link: '/appendices/appendix-f' },
+          { text: '附录 G：Julia 语言速查 (The Julia Language)', link: '/appendices/appendix-g' }
         ]
       }
     ],

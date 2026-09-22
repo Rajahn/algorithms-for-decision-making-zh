@@ -216,12 +216,32 @@
 
 ---
 
-## 附录 (Appendices) `[即将上线]`
+## 全书附录 (Appendices) · 全卷完结
 
-- 附录 A：数学概念 (Mathematical Concepts)
-- 附录 B：常用概率分布速查 (Probability Distributions)
-- 附录 C：计算复杂度 (Computational Complexity)
-- 附录 D：神经网络表示 (Neural Representations)
-- 附录 E：基础搜索算法 (Search Algorithms)
-- 附录 F：全书基准决策问题库 (Benchmark Problems)
-- 附录 G：Julia 科学计算语言速查 (Julia)
+- **附录 A：数学概念 (Mathematical Concepts)** [[已上线]](/appendices/appendix-a)
+  - 向量范数与度量空间（$L_1, L_2, L_\infty$ 范数等距球图 A.1）
+  - 凸集与凸函数（图 A.2 凸集、图 A.3 凸区间、图 A.4 全局极小值点）
+  - 多元微积分泰勒级数逐阶展开（图 A.5 余弦函数逼近）
+  - 图论基础（有向无环图、父子节点与路径序列图 A.6）
+- **附录 B：常用概率分布速查 (Probability Distributions)** [[已上线]](/appendices/appendix-b)
+  - 6 大常用离散分布（伯努利、二项、范畴、多项、泊松、几何分布公式/定义域/期望方差速查表）
+  - 7 大常用连续分布（均匀、正态、指数、拉普拉斯、Beta、Dirichlet、多元高斯解析表）
+- **附录 C：计算复杂度 (Computational Complexity)** [[已上线]](/appendices/appendix-c)
+  - 核心复杂度阶梯（P, NP, NP-complete, NP-hard, PSPACE, EXP, NEXP-complete 全景层级图 C.1）
+  - 3-SAT、POMDP 与 Dec-POMDP 在复杂度树中的归宿位置
+- **附录 D：神经网络表示 (Neural Representations)** [[已上线]](/appendices/appendix-d)
+  - 全连接层前向传播（图 D.1 微观连线与图 D.2 决策分界面）
+  - 常见非线性激活函数族（Sigmoid, Tanh, ReLU, Softplus 图 D.3 对比）
+  - 循环神经网络 RNN（时序展开图 D.4）与生成对抗网络 GAN（图 D.5 架构）
+- **附录 E：基础搜索算法 (Search Algorithms)** [[已上线]](/appendices/appendix-e)
+  - 八数码滑动华容道（8-Puzzle 状态转移图 E.1 与全局拓扑图 E.2）
+  - 经典搜索范式对比（DFS, BFS, UCS, A* 启发式搜索树图 E.3 与动态规划剪枝加速图 E.4）
+- **附录 F：全书基准决策问题库 (Benchmark Problems)** [[已上线]](/appendices/appendix-f)
+  - 六边形世界 Hex World（标准与带障碍直道图 F.1）
+  - 2048 棋局（初始状态图 F.2 与滑动合并规则图 F.3）
+  - 倒立摆 Cart-Pole（图 F.4）与连续山地车 Mountain Car（图 F.5）
+  - 民航防撞系统（状态几何图 F.6 与切片最优策略图 F.7）
+- **附录 G：Julia 语言速查 (The Julia Language)** [[已上线]](/appendices/appendix-g)
+  - 类型层次系统（Float64 继承树图 G.1）
+  - 多重分派机制（Multiple Dispatch）与高性能原生不可变结构体
+  - 向量化广播机制与科学计算生态
